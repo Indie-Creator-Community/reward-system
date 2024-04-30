@@ -7,6 +7,7 @@
   },
   "packageManager": "pnpm@8.3.1",
   "scripts": {
+    "git:config": "git config --local include.path ../.gitconfig",
     "build": "turbo build",
     "clean": "git clean -xdf node_modules",
     "clean:workspaces": "turbo clean",
@@ -25,6 +26,7 @@
     "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
     "@manypkg/cli": "^0.20.0",
     "@types/prettier": "^2.7.2",
+    "commitizen": "^4.3.0",
     "eslint": "^8.38.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
@@ -33,5 +35,13 @@
     "prettier-plugin-tailwindcss": "^0.2.7",
     "turbo": "^1.9.3",
     "typescript": "^5.0.4"
-  }
+  },
+  "devDependencies": {
+    "cz-vinyl": "^2.3.0"
+  },
+  "config": {
+		"commitizen": {
+			"path": "cz-vinyl"
+		}
+	}
 }
