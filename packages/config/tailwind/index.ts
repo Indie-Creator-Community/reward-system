@@ -1,3 +1,4 @@
+/* eslint-disable */
 import type { Config } from 'tailwindcss';
 
 export default {
